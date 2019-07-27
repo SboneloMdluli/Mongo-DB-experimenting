@@ -5,12 +5,13 @@ $(function () {
     var email = $('#email').val()
     var password = $('#password').val()
     var password2 = $('#password2').val()
-
+    console.log(email)
     let user = {
-
       email: email,
       password: password
     }
+
+    alert(email)
 
     if (passwordLength(password) === false) {
       alert('Password should be at least 8 charcters')
@@ -20,27 +21,23 @@ $(function () {
       alert('Passwords do not match')
     }
 
-    if (emailLength(password) == true && matchPasswords(password, password2) == true && passwordLength(password) == true) {
+    console.log(user)
+
+    if (matchPasswords(password, password2) == true && passwordLength(password) == true) {
       $.ajax({
-        url: '/api/signup',
+        url: '/signup',
         method: 'POST',
         contentType: 'application/json',
         data: JSON.stringify(user),
         success: function () {
+          console.log(user)
           window.location.replace('../views/login.html')
         }
       })
     }
   })
 
-  const emailLength = function emailLength (email) {
-    if (email.length < 1) {
-      return false
-    }
-    return true
-  }
-
-  const passwordLength = function passwordLength (password) {
+  function passwordLength (password) {
     if (password.length < 8) {
       return false
     }

@@ -2,6 +2,7 @@
 
 let path = require('path')
 let express = require('express')
+let mongoose = require('mongoose')
 
 let app = express()
 app.use(express.static(__dirname))
