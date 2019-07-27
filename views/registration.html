@@ -1,13 +1,14 @@
-<!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
+
+  <title>Signup</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
+
     <div class="container py-5">
         <div class="row">
             <div class="col-md-12">
@@ -15,9 +16,9 @@
                     <div class="col-md-6 mx-auto">
                         <div class="card border-secondary">
                             <div class="card-body">
-                                      <form class="form" role="form" autocomplete="on" id ='registrationForm'action="/signup" method="post">
+                                      <form action="/api/signup" method="post" class="form" role="form" autocomplete="on" id ='registrationForm'action="/api/signup" method="post">
                                         <h3>Create an Account</h3>
-                        
+        
                                         <div class="form-group">
                                           <label for="email"> Email:</label>
                                           <input name="mail" id = "email" type="email" class="form-control" placeholder="Email" required ='true'>
@@ -35,11 +36,11 @@
 
                                         <div class="form-group">
                                             <p>I agree to the terms and conditions <input type="checkbox" required="true"> </p>
-                                        
+
                                             <p><a href="/login">Already have an Account? Login</a>  <button type="submit" class="btn btn-success btn-lg float-right">Register</button></p>
-                                            
+
                                         </div>
-                                        
+
                                       </form>
                                     </div>
                                   </div>
@@ -49,8 +50,8 @@
                           </div>
                         </div>
 
-  
+
   <script src="/public/scripts/jquery.js"></script>
   <script src="public/scripts/juser.js"></script>
 </body>
-</html>
+</html> 
