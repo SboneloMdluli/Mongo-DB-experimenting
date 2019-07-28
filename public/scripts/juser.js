@@ -35,7 +35,7 @@ $(function () {
         contentType: 'application/json',
         data: JSON.stringify(user),
         success: function () {
-          window.location.replace('../views/login.html')
+          window.location.replace('../views/main.html')
         }
       })
     }
