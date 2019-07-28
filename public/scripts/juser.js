@@ -25,7 +25,6 @@ $(function () {
 
     if (matchPasswords(password, password2) === false) {
       $('#password').after('<span class="error">Passwords do not match</span>')
-      $('#password2').after('<span class="error">Passwords do not match</span>')
     }
 
     if (emailLength(password) == true && matchPasswords(password, password2) == true && passwordLength(password) == true) {

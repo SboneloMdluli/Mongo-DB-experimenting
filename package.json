@@ -26,15 +26,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/witseie-elen4010/2019-002-project.git"
+    "url": "git+https://github.com/SboneloMdluli/MusicLibrary.git"
   },
   "bugs": {
-    "url": "https://github.com/witseie-elen4010/2019-002-project/issues"
+    "url": "https://github.com/SboneloMdluli/MusicLibrary/issues"
   },
-  "homepage": "https://github.com/witseie-elen4010/2019-002-project#readme",
+  "homepage": "https://github.com/SboneloMdluli/MusicLibrary#readme",
   "description": "",
   "devDependencies": {
     "dotenv": "^7.0.0",
-    "jest": "^24.7.1"
+    "jest": "^24.8.0"
   }
 }

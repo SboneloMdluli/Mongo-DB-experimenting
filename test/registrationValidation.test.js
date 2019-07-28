@@ -1,13 +1,5 @@
 'use strict'
-let user = require('../public/scripts/users')
-
-test('A new user is added to the system after creating account', () => {
-  let newUser = {}
-  newUser.email = 'test@email.com'
-  newUser.password = '1234'
-  user.addUser(newUser)
-  expect(user.getUsers()).toBeGreaterThan(0)
-})
+let user = require('../public/scripts/user')
 
 test('Passwords do not match', () => {
   let password = 'testing'
