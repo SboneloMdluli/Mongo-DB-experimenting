@@ -18,7 +18,7 @@
     "express-session": "^1.16.2",
     "flash": "^1.1.0",
     "jquery": "^3.4.0",
-    "mongoose": "^5.6.7",
+    "mongoose": "^5.7.5",
     "mssql": "5.1.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
